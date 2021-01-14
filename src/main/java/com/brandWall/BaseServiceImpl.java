@@ -90,7 +90,7 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 	/**
 	 * 从sql中找出from子句
 	 * 
-	 * @param sql
+	 * @param hql
 	 * @return
 	 */
 	private String getFromClause(String hql) {
@@ -156,7 +156,7 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 		List<?> list = null;
 		int total = 0;
 		int cpage = pageable.getPageNumber();// 第几页
-		int size = pageable.getPageSize();// 每页显示多上行
+		int size = pageable.getPageSize();// 每页显示多少行
 		int index = (cpage - 1) * size;
 
 		List<Object> obj = queryHelper.getParameters();
