@@ -91,8 +91,9 @@ public class OpenCommonController extends BaseController {
 		FwUser user = userJpa.findOne(id);
 		
 		map.put("user", user);
-
+		//System.out.println("测试git更新后提交");
 		return Msg.MsgSuccess(map);
+
 	}
 
 
