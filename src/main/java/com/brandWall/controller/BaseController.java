@@ -43,11 +43,7 @@ public class BaseController {
 	}
 
 	public String findShopIdByCode(Integer code) throws MyException {
-		// FwSsShop shop = fwSsShopJpa.findBySsCode(code);
-		// if(null == shop){
-		// throw new MyException("店铺不存在");
-		// }
-		// return shop.getSsId();
+
 		return null;
 	}
 
